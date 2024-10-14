@@ -1,7 +1,9 @@
 const accardionArray = document.querySelectorAll(".accordion__item");
 
 function removeAccardionArrayItemShow(id) {
+  console.log(accardionArray);
   if (!id) return
+
   accardionArray.forEach((accardion) => {
     if (accardion.closest('.accordion').id === id) {
       accardion.querySelector(".accordion__body").classList.remove("accordion__item_show");
